@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 body{
   margin:0;
@@ -147,3 +148,154 @@ font-weight: bold;
   white-space: nowrap;
   position: absolute;
 }
+=======
+
+body{
+  margin:0;
+  text-align: center;
+}
+
+h1{
+  margin: 0;
+}
+
+
+body {
+  background: #EAEAEA;
+}
+
+.topnav{
+  font-size: 30px;
+  font-family: "Consolas";
+  text-align: right;
+  width: 100%;
+  display: block;
+  position: fixed;
+}
+
+.photo{
+  width: 30%;
+  height: 30%;
+  position:relative;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+ border-radius: 60px 25% 10px;
+
+}
+
+.name{
+  display: inline;
+  background-color: blue;
+}
+
+.icons{
+  width: 170px;
+  height: 200px;
+}
+
+.skills{
+
+  background-color: blue;
+}
+
+
+.name{
+  display: inline;
+  color: white;
+  font-size: 60px;
+  position: relative;
+  top: -10%;
+}
+
+.container {
+
+  margin: 0 auto;
+  position: relative;
+  margin-top: 10%;
+  box-shadow: 2px 5px 20px rgba(119, 119, 119, 0.5);
+}
+
+.rb-container {
+  font-family: "Consolas";
+  margin: auto;
+  display: block;
+  position: relative;
+  height: auto;
+}
+
+.rb-container ul.rb {
+  margin: 2.5em 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.rb-container ul.rb li {
+  list-style: none;
+  margin: auto;
+  margin-left: 10em;
+  min-height: 50px;
+  border-left: 1px dashed #fff;
+  padding: 0 0 50px 30px;
+  position: relative;
+}
+
+.rb-container ul.rb li:last-child {
+  border-left: 0;
+}
+
+.rb-container ul.rb li::before {
+  position: absolute;
+  left: -18px;
+  top: -5px;
+  content: " ";
+  border: 8px solid rgba(255, 255, 255, 1);
+  border-radius: 500%;
+  background: #00ABB3;
+  height: 20px;
+  width: 20px;
+  transition: all 500ms ease-in-out;
+}
+
+.rb-container ul.rb li:hover::before {
+  border-color: #232931;
+  transition: all 1000ms ease-in-out;
+}
+
+ul.rb li .timestamp {
+  color: #00ABB3;
+  width: 100px;
+  font-size: 18px;
+ margin-right: 10px;
+font-weight: bold;
+
+
+}
+
+.item-title {
+  max-width: 20em;
+  color: #fff;
+  text-align: left;
+
+}
+
+
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+
+}
+
+.flex-child:first-child {
+    margin-right: 20px;
+}
+
+.container-3 {
+  width: 5em;
+  vertical-align: right;
+  white-space: nowrap;
+  position: absolute;
+}
+>>>>>>> 51fd075decbe397a7e627f181f9a80f1c9eefddc
