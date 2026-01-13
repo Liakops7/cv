@@ -35,3 +35,5 @@ The goal of the project is to provide a clean and lightweight personal portfolio
 
 ## Project Structure
 
+
+
