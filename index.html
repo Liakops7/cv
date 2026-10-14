@@ -1,103 +1,118 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Elias Liakopoulos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Elias Liakopoulos — Programmer</title>
+    <meta name="description" content="Elias Liakopoulos — Computer Science graduate of the Athens University of Economics and Business, programmer, photographer and video creator.">
+    <meta name="theme-color" content="#00ABB3">
+    <link rel="icon" href="photo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
 
-      <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <a href="#news">Skills</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-      </div>
+    <header class="topnav">
+      <nav class="wrap">
+        <a class="brand" href="#home">elias<span>.</span></a>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
+    <main>
 
-
-        <img class="photo" src="photo.jpg" alt="">
-
-      <div class="names">
-        <h1 >I'm Elias</h1>
-        <p  >a programmer</p>
-      </div>
-
-      <div class="container">
-
-
-          <div class="rb-container">
-            <ul class="rb">
-
-              <li class="rb-item" ng-repeat="itembx">
-                <div class="flex-container">
-                  <div class="timestamp">
-                    2013<br> June
-                  </div>
-                  <div class="item-title">Graduating from the 30th High School of Athens.</div>
-                 </div>
-              </li>
-
-              <li class="rb-item" ng-repeat="itembx">
-                <div class="flex-container">
-                  <div class="timestamp">
-                    2014<br> September
-                  </div>
-                  <div class="item-title">Admitting Athens University of Economics and Business in the section of Computer Science.</div>
-                 </div>
-              </li>
-
-              <li class="rb-item" ng-repeat="itembx">
-                <div class="flex-container">
-                  <div class="timestamp">
-                    2014<br> January
-                  </div>
-                  <div class="item-title">Working as a Videographer and video editor.</div>
-                 </div>
-              </li>
-
-              <li class="rb-item" ng-repeat="itembx">
-                <div class="flex-container">
-                  <div class="timestamp">
-                    2015 <br> September
-                  </div>
-                  <div class="item-title">Working as a photographer.</div>
-                </div>
-              </li>
-
-              <li class="rb-item" ng-repeat="itembx">
-                <div class="flex-container">
-                  <div class="timestamp">
-                    2017<br> October
-                  </div>
-                  <div class="item-title"> Creating video content for Greek Ministry of Defense.</div>
-                 </div>
-              </li>
-
-              <li class="rb-item" ng-repeat="itembx">
-                <div class="flex-container">
-                  <div class="timestamp">
-                    2018 <br> June
-                  </div>
-                  <div class="item-title"> Running own property rental business.</div>
-                </div>
-              </li>
-
-            </ul>
+      <section id="home" class="hero wrap">
+        <div class="hero-text">
+          <p class="eyebrow">Hello, world —</p>
+          <h1>I'm Elias Liakopoulos.</h1>
+          <p class="lead">A programmer with a Computer Science background from the Athens University of Economics and Business, and years of hands-on work behind a camera.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#contact">Get in touch</a>
+            <a class="btn" href="#experience">See my path</a>
+          </div>
         </div>
+        <img class="photo" src="photo.jpg" alt="Portrait of Elias Liakopoulos" width="1152" height="1152">
+      </section>
 
-        <div class="skills">
-          <img class="icons" src="images/java.png" alt="">
-          <img class="icons" src="images/psql.png" alt="">
-          <img class="icons" src="images/html.png" alt="">
-          <img class="icons" src="images/css.png" alt="">
-          <img class="icons" src="images/js.png" alt="">
-
+      <section id="about" class="wrap section">
+        <h2><span>01.</span> About</h2>
+        <div class="about-grid">
+          <p>I studied Computer Science at the Athens University of Economics and Business. Before and alongside my studies, I worked as a videographer, video editor and photographer, including producing video content for the Greek Ministry of Defence.</p>
+          <p>That mix taught me to care about both how things work and how they look. Today I build software with Java, SQL and the web stack, and I also run my own property rental business.</p>
         </div>
+      </section>
 
-        <p class="footer">© Created And Designed By Elias Liakopoulos • 2022</p>
+      <section id="experience" class="wrap section">
+        <h2><span>02.</span> Experience &amp; Education</h2>
+        <ol class="timeline">
+          <li>
+            <time>June 2018</time>
+            <h3>Property rental business</h3>
+            <p>Founded and run my own property rental business.</p>
+          </li>
+          <li>
+            <time>October 2017</time>
+            <h3>Video content creator — Greek Ministry of Defence</h3>
+            <p>Produced video content for the Ministry.</p>
+          </li>
+          <li>
+            <time>September 2015</time>
+            <h3>Photographer</h3>
+            <p>Worked as a professional photographer.</p>
+          </li>
+          <li class="edu">
+            <time>September 2014</time>
+            <h3>B.Sc. Computer Science — Athens University of Economics and Business</h3>
+            <p>Admitted to the Department of Computer Science.</p>
+          </li>
+          <li>
+            <time>January 2014</time>
+            <h3>Videographer &amp; video editor</h3>
+            <p>Shot and edited video projects.</p>
+          </li>
+          <li class="edu">
+            <time>June 2013</time>
+            <h3>30th High School of Athens</h3>
+            <p>Graduated.</p>
+          </li>
+        </ol>
+      </section>
 
+      <section id="skills" class="wrap section">
+        <h2><span>03.</span> Skills</h2>
+        <ul class="skills">
+          <li><img src="images/java.png" alt="" width="64" height="64"><span>Java</span></li>
+          <li><img src="images/psql.png" alt="" width="64" height="64"><span>PostgreSQL</span></li>
+          <li><img src="images/html.png" alt="" width="64" height="64"><span>HTML</span></li>
+          <li><img src="images/css.png" alt="" width="64" height="64"><span>CSS</span></li>
+          <li><img src="images/js.png" alt="" width="64" height="64"><span>JavaScript</span></li>
+        </ul>
+      </section>
 
+      <section id="contact" class="wrap section contact">
+        <h2><span>04.</span> Contact</h2>
+        <p>Open to new opportunities and collaborations. The best way to reach me is through GitHub.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://github.com/Liakops7" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer wrap">
+      © <span id="year">2026</span> Elias Liakopoulos · Designed &amp; built by me
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
