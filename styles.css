@@ -219,14 +219,14 @@ h2::after {
   border-left: 2px dashed var(--line);
 }
 
-.timeline li {
+.timeline > li {
   position: relative;
   padding: 0 0 36px 44px;
 }
 
-.timeline li:last-child { padding-bottom: 0; }
+.timeline > li:last-child { padding-bottom: 0; }
 
-.timeline li::before {
+.timeline > li::before {
   content: "";
   position: absolute;
   left: 0;
@@ -239,9 +239,9 @@ h2::after {
   transition: background 0.3s;
 }
 
-.timeline li:hover::before { background: var(--accent); }
+.timeline > li:hover::before { background: var(--accent); }
 
-.timeline li.edu::before { border-radius: 4px; }
+.timeline > li.edu::before { border-radius: 4px; }
 
 .timeline time {
   font-family: var(--mono);
@@ -286,6 +286,60 @@ h2::after {
 
 .skills span { font-family: var(--mono); font-size: 14px; font-weight: 700; }
 
+/* ---------- Bullet lists (experience, skill groups) ---------- */
+
+.bullets {
+  margin: 8px 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+.bullets li { margin-bottom: 4px; }
+.bullets li::marker { color: var(--accent); }
+
+.timeline .stack {
+  margin-top: 10px;
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--accent-ink);
+}
+
+/* ---------- Cards (projects, skill groups) ---------- */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  display: block;
+  padding: 24px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  color: var(--text);
+  text-decoration: none;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+a.card:hover { transform: translateY(-4px); border-color: var(--accent); }
+
+.card h3 { margin: 0 0 8px; font-size: 19px; }
+.card p { margin: 0; color: var(--muted); }
+
+.card-tag {
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent-ink) !important;
+  margin-bottom: 6px !important;
+}
+
+.skill-groups { margin-top: 32px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); }
+.skill-groups .bullets { font-size: 15px; }
+
 /* ---------- Contact & footer ---------- */
 
 .contact p { color: var(--muted); max-width: 36em; margin: 0 0 24px; }
@@ -307,7 +361,7 @@ h2::after {
 
   .wrap { padding: 0 16px; }
 
-  .topnav ul { gap: 16px; }
+  .topnav ul { gap: 12px; }
   .topnav ul a { font-size: 12px; }
 
   .hero {
